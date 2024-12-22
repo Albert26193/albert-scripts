@@ -16,4 +16,4 @@ function source_all_scripts {
 	done
 }
 
-source_all_scripts ${HOME}/.albert-scripts
+source_all_scripts "${HOME}/.albert-scripts/network"
