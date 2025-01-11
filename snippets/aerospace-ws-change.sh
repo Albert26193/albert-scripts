@@ -7,6 +7,7 @@ IFS=$'\n' all_ws=$(aerospace list-workspaces --all --format '%{workspace}|%{moni
 
 chrome_pip=$(printf '%s\n' $all_wins | rg '画中画')
 snipaste_window=$(printf '%s\n' $all_wins | rg 'Paster - Snipaste')
+kando=$(printf '%s\n' $all_wins | rg 'Kando')
 target_mon=$(printf '%s\n' $all_ws | rg "$ws" | cut -d'|' -f2 | xargs)
 
 move_win() {
@@ -27,4 +28,4 @@ move_win() {
 
 move_win "${chrome_pip}"
 move_win "${snipaste_window}"
-
+move_win "${kando}"
